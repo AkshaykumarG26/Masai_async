@@ -61,3 +61,33 @@ for (var i = 0; i < arr.length; i++){
 }
 console.log(result1)
 console.log("----------------------------------")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function upperlower(str){
+    var lowers = "abcdefghijklmnopqrstuvwxyz "
+    var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+    var out = '';
+    for (var i = 0; i < str.length; i++){
+        for (var j = 0; j < uppers.length; j++){
+            if (str[i] == uppers[j]){
+                out = out + (lowers[j])
+            }else if(str[i] == lowers[j]){
+                out = out + (uppers[j])
+            }
+        }
+    }
+    return out
+}
+

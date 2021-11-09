@@ -23,20 +23,21 @@ var array = [
   ]
 
 for (i = 0; i < array.length; i++) {
+  // console.log(array[i])
   for (j = 0; j < 1; j++) {
     var marks0 =(array[i].students[j].marks)
-    var  d =(array[i].students[j+1].marks)
+    var marks1 =(array[i].students[j+1].marks)
     var sum = 0
-    var sum_1 = 0
-    for (k=0; k<marks0.length; k++) {
-      sum = sum + (marks0[k])
-      sum_1 = sum_1 + d[k]
+    var sum2 = 0
+    for (k = 0; k < marks0.length; k++) {
+      sum = sum + marks0[k]
+      sum2 = sum2 + marks1[k]
   }
 } 
 
-if (sum<sum_1) {
-  console.log(array[i].grade+ "-" + array[i].students[j].name + "-"+sum_1)
-} else if (sum>sum_1) {
+if (sum<sum2) {
+  console.log(array[i].grade+ "-" + array[i].students[j].name + "-"+sum2)
+} else if (sum>sum2) {
   console.log(array[i].grade+ "-" + array[i].students[j].name + "-"+sum)
 }
   

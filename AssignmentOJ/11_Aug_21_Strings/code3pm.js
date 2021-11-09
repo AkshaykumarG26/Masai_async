@@ -1,3 +1,11 @@
+function printCharReverse(N,str) {
+    //write code here
+    for (var i = str.length; i > 0; i--){
+        console.log(str[i])
+    }
+
+}
+
 function charAtOddPos(N, str){
     for (var i = 0; i < N; i++){
         if (i % 2 == 1){

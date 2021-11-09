@@ -53,7 +53,7 @@ function secondMaximum(a, b, c) {
         console.log(c)
     }
   }
-// secondMaximum(3,7,5)
+secondMaximum(3,7,5)
 
 
 function rangeOfTwo(left, right) {
@@ -83,7 +83,7 @@ var out = num.toString();
 // console.log(out)
 for (var i = 1; i <= out.length; i++){
     for (var j = 1; j <= i; j++){
-        console.log(j)
+        // console.log(j)
     }
 }
 
